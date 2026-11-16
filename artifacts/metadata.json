@@ -1,0 +1,38 @@
+{
+  "nama_model": "Segmentasi Pelanggan UMKM",
+  "algoritma": "KMeans",
+  "jumlah_cluster": 4,
+  "fitur": [
+    "jumlah_transaksi_6bln",
+    "total_belanja_rp",
+    "hari_sejak_transaksi_terakhir",
+    "persen_pakai_promo",
+    "rating_rata"
+  ],
+  "fitur_log": [
+    "jumlah_transaksi_6bln",
+    "total_belanja_rp",
+    "hari_sejak_transaksi_terakhir"
+  ],
+  "imputasi": "median dari data pengembangan",
+  "scaling": "StandardScaler",
+  "jumlah_data_latih": 8000,
+  "jumlah_data_test": 2000,
+  "silhouette_test": 0.48827337252073927,
+  "nama_segmen": {
+    "0": "Frekuensi rendah dengan belanja relatif tinggi",
+    "1": "Sering menggunakan promo",
+    "2": "Sering bertransaksi dengan belanja tinggi",
+    "3": "Jarang bertransaksi dan lama tidak aktif"
+  },
+  "rekomendasi_segmen": {
+    "0": "Tawarkan paket pembelian berkala untuk mendorong pembelian ulang.",
+    "1": "Tawarkan promo dengan minimum pembelian sambil menjaga margin.",
+    "2": "Berikan program loyalitas untuk mempertahankan pelanggan aktif.",
+    "3": "Lakukan kampanye ajakan kembali berbelanja dengan penawaran terbatas."
+  },
+  "versi_scikit_learn": "1.6.1",
+  "versi_numpy": "2.4.6",
+  "versi_pandas": "2.2.3",
+  "versi_joblib": "1.6.0"
+}
